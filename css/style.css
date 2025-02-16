@@ -53,12 +53,13 @@ Take up  all of the columns
 Use the header.jpg file as a non-repeating background image with parallax effect
 You can NOT assume that the .overview class will always be the first child */
 
-.container > div:first-of-type {
+.container > :first-of-type {
   grid-column: 1 / -1;
-  background-image: url("/images/header.jpg");
-  background-attachment: fixed;
+  background-image: url("../images/header.jpg");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 
@@ -119,6 +120,7 @@ Begin on the 2nd, 3rd, 4th and 5th row respectively. */
 
  /* Step 8: Write the selector/rule property to style the .text-block class. The .text-block class:
 Is centered horizontally and vertically with centered text. */
+
 .text-block {
   place-items: center;
   text-align: center;
